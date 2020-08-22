@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    font-family: Arial;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+    background-color: #16b416;
+    color: whitesmoke;
+}
+
+header > h1, h2 {
+    padding: 0.5em;
+    margin: 0;
+}
+
+#articles {
+    text-align: center;
+    margin: 0 auto;
+    background: ghostwhite;
+    width: 50%;
+    height: 100%;
+}
+
+article {
+    padding: 2em;
+}
+
+article > h2 {
+    font-size: 2em;
+}
+
+article > h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+article > h4 {
+    color: gray;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.button {
+    color: whitesmoke;
+    background-color: #16b416;
+    text-decoration: none;
+    padding: 0.8em;
+    border-radius: 1em;
+}
