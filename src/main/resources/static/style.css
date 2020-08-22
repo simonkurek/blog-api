@@ -49,6 +49,7 @@ article > h4 {
     color: gray;
     font-size: 1em;
     font-weight: normal;
+    margin: 0;
 }
 
 .button {
