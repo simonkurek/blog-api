@@ -18,6 +18,7 @@ const loadArticle = (id) => {
             html += '<h2>' + article.title + '</h2>'
             html += '<h4> Kategoria: ' + article.category + ' | Autor: ' + article.author + '</h4>'
             html += '<p>' + article.content + '</p>'
+            html += '<a href="#" class="button" onclick="window.location = \'http://localhost:8080/\'">Wróć do strony głównej</a>'
             html += '</article>'
             document.getElementById('articles').innerHTML = html
         })
@@ -35,11 +36,9 @@ const init = () => {
                 html += '<h2>' + article.title + '</h2>'
                 html += '<h4> Kategoria: ' + article.category + ' | Autor: ' + article.author + '</h4>'
                 html += '<h3>' + article.description + '</h3>'
-                html += '<a href="#" class="button" id="art' + article.id + '">Czytaj dalej</a>'
+                html += '<a href="#" class="button" onclick="loadArticle(' + article.id + ')">Czytaj dalej</a>'
                 html += '</article>'
                 document.getElementById('articles').innerHTML += html
-                document.getElementById('art' + article.id)
-                    .addEventListener('click', _ => loadArticle(article.id))
             })
         })
 }

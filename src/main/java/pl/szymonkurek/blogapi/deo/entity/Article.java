@@ -12,8 +12,8 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
-
     private String title;
+    
     private String desc;
     private String category;
     private String author;
